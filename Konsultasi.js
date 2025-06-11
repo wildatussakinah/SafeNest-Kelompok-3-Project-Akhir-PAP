@@ -2,27 +2,27 @@ const experts = [
   {
     name: "Ida Bagus, M.Psi.",
     role: "Psikolog Klinis",
-    image: "IdaBagus.jpeg",
+    image: "assets/konsultasi_page 2_person 7_ida bagus.jpg",
     color: "blue",
-    konsultasiLink: "ChatBotKonsultasi.html",
-    profileLink: "ProfilKonsultasi.html"
+    konsultasiLink: "Konsultasi_ChatBot.html",
+    profileLink: "Konsultasi_Profil.html"
   },
   {
     name: "Annisa Axelta, M.Psi.",
     role: "Psikolog Klinis",
-    image: "Annisa.jpeg",
+    image: "assets/konsultasi_page 2_person 8_annisa axelta.jpg",
     color: "pink"
   },
   {
     name: "Indira Tandiono, M.Psi.",
     role: "Konselor",
-    image: "Indira.jpeg",
+    image: "assets/konsultasi_page 1_person 3_indira tandiono.jpeg",
     color: "pink"
   },
   {
     name: "Zulfan Reza, M.Psi.",
     role: "Psikolog Klinis",
-    image: "Zulfan.jpeg",
+    image: "assets/konsultasi_page 1_person 4_zulfan reza.jpeg",
     color: "blue"
   }
 ];

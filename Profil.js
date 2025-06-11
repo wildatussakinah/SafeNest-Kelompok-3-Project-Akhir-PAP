@@ -12,5 +12,5 @@ function closePopup() {
 
 function confirmLogout() {
   alert("Anda telah logout.");
-  window.location.href = "home.html";
+  window.location.href = "index.html";
 }

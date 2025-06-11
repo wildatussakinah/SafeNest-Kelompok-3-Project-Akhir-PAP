@@ -1,97 +1,82 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fff;
-  color: #333;
+  font-family: 'Inter', sans-serif;
+  background-color: white;
+  color: #1f1f1f;
 }
 
-header.navbar {
-  background-color: #0c4a83;
+/* Navbar */
+.navbar {
+  background-color: #265A96;
   color: white;
+  padding: 10px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.logo {
-  color: #5AA0F1;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-}
-
-.logo span {
-  color: #fda4af;
-  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+.logo img {
+  height: 40px;
 }
 
 .menu {
   display: flex;
+  align-items: center;
   gap: 20px;
+  position: relative;
 }
 
 .menu a {
   color: white;
   text-decoration: none;
-  position: relative;
-  padding: 0 10px;
-}
-
-.menu a:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 25%;
-  height: 50%;
-  width: 1px;
-  background-color: white;
+  font-weight: 500;
 }
 
 .menu a:hover {
   text-decoration: underline;
-  font-weight: bold;
 }
 
-.menu .active {
-  border-bottom: 2px solid white;
-  font-weight: bold;
+.menu span {
+  color: white;
 }
 
-/* DROPDOWN PENGATURAN */
-.pengaturan-dropdown {
-  position: relative;
-  display: inline-block;
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
   cursor: pointer;
 }
 
-.pengaturan-dropdown img {
-  width: 25px;
-  height: 25px;
-}
-
+/* Dropdown menu */
 .dropdown-menu {
   display: none;
   position: absolute;
+  top: 40px;
   right: 0;
   background-color: white;
-  min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  z-index: 999;
-  border-radius: 6px;
-  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1000;
 }
 
 .dropdown-menu a {
   display: block;
-  padding: 10px 16px;
-  text-decoration: none;
+  padding: 8px 12px;
   color: #333;
-  background-color: white;
+  text-decoration: none;
 }
 
 .dropdown-menu a:hover {
-  background-color: #f3f4f6;
+  background-color: #f0f0f0;
+}
+
+.dropdown-menu.show {
+  display: block;
 }
 
 /* Main content */

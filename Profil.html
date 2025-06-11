@@ -4,20 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Profil - SafeNest</title>
-  <link rel="stylesheet" href="StyleProfil.css" />
+  <link rel="stylesheet" href="Profil.css" />
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">Safe<span>Nest</span></div>
-    <nav class="menu">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/Logo.svg" alt="SafeNest">
+    </div>
+    <div class="menu">
       <a href="index.html">Home</a>
+      <span>|</span>
       <a href="Artikel.html">Artikel</a>
+      <span>|</span>
       <a href="InfoHukum_1.html">Informasi</a>
+      <span>|</span>
       <a href="Konsultasi.html">Konsultasi</a>
+      <span>|</span>
       <a href="ForumAman.html">Forum Aman</a>
-    </nav>
-    <button class="login-btn">Daftar/Masuk</button>
-  </header>
+      <img src="assets/icon_settings_bw.png" alt="Settings" class="icon" id="gearIcon">
+      <div class="dropdown-menu" id="dropdownMenu">
+        <a href="Profil.html">Profil</a>
+        <a href="#">Pengaturan</a>
+        <a href="#">Keluar</a>
+      </div>
+    </div>
+  </nav>
 
   <div class="main-container">
     <aside class="sidebar">
@@ -31,7 +43,7 @@
 
     <section class="content">
       <div class="profile-header">
-        <img src="FotoProfil.png" alt="Foto Profil" />
+        <img src="assets/profil_foto.png" alt="Foto Profil" />
         <div class="profile-info">
           <h2>Sabrina Febbiyanti</h2>
           <p>sabrina1@gmail.com</p>

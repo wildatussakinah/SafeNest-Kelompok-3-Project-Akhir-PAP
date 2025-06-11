@@ -1,16 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
+// navbar gear icon functionality
+document.addEventListener("DOMContentLoaded", () => {
   const gearIcon = document.getElementById("gearIcon");
   const dropdownMenu = document.getElementById("dropdownMenu");
 
-  // Toggle dropdown saat ikon gear diklik
-  gearIcon.addEventListener("click", function (event) {
-    event.stopPropagation(); // Hindari menutup saat klik pada icon
+  gearIcon.addEventListener("click", () => {
     dropdownMenu.classList.toggle("show");
   });
 
-  // Tutup dropdown jika klik di luar menu
-  document.addEventListener("click", function (event) {
-    if (!dropdownMenu.contains(event.target) && event.target !== gearIcon) {
+  document.addEventListener("click", (e) => {
+    if (!gearIcon.contains(e.target) && !dropdownMenu.contains(e.target)) {
       dropdownMenu.classList.remove("show");
     }
   });
