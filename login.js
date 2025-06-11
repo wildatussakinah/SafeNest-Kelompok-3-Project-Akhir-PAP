@@ -13,7 +13,7 @@ function loginUser() {
   return false;
 }
 
-// dropdown logic sama seperti register.js
+// navbar gear icon functionality
 document.addEventListener("DOMContentLoaded", () => {
   const gearIcon = document.getElementById("gearIcon");
   const dropdownMenu = document.getElementById("dropdownMenu");
