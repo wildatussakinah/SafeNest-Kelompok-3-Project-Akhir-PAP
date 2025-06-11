@@ -9,7 +9,7 @@ function loginUser() {
 
   // Simulasi login
   alert("Login berhasil!");
-  window.location.href = "home.html"; // arahkan ke halaman utama
+  window.location.href = "index.html"; // arahkan ke halaman utama
   return false;
 }
 
