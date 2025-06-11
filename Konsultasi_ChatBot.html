@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SafeNest Chat</title>
+  <link rel="stylesheet" href="StyleChatBot.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Safe<span>Nest</span></div>
+    <nav class="menu">
+      <a href="#">Home</a>
+      <a href="Artikel.html">Artikel</a>
+      <a href="Informasi.html">Informasi</a>
+      <a href="Konsultasi.html" class="active">Konsultasi</a>
+      <a href="ForumAman.html">Forum Aman</a>
+    </nav>
+    <div class="pengaturan">
+      <div class="pengaturan-dropdown">
+      <img src="pengaturan.png" alt="pengaturan" id="gearIcon" />
+      <div class="dropdown-menu" id="dropdownMenu">
+        <a href="#">Profil</a>
+        <a href="#">Pengaturan Akun</a>
+        <a href="#">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="chat-container">
+    <div class="chat-header">
+      <img src="IdaBagus.jpeg" alt="profil" class="profile-img">
+      <div class="chat-info">
+        <h3>Ida Bagus, M.Psi.</h3>
+        <p>Psikolog Klinis</p>
+      </div>
+      <div class="menu-icon">⋮</div>
+    </div>
+
+    <div class="chat-box" id="chat-box">
+      <div class="bot-message">Halo! Saya dari Psikolog Ida Bagus, M. Psi. Apa yang ingin anda diskusikan hari ini? Saya bisa membantu anda dengan pertanyaan umum, atau anda bisa menyampaikan kekhawatiran anda.</div>
+      <div class="user-message">Saya merasa cemas dan stress</div>
+      <div class="bot-message">Terima kasih sudah berbagi. Kecemasan dan stres adalah hal yang umum dialami banyak orang. Saya mengerti perasaan anda. Bisakah anda ceritakan sedikit lebih lanjut apa yang sedang anda rasakan?</div>
+      <div class="user-message">Saya merasa kewalahan dengan pekerjaan dan studi yang saya jalani</div>
+      <div class="bot-message">Saya di sini untuk mendengarkan dan membantu anda menemukan dukungan yang tepat. Ingin tahu lebih banyak tentang bagaimana SafeNest bisa membantu mengelola stres pekerjaan/studi?</div>
+    </div>
+
+    <div class="chat-input">
+      <button id="plus-btn">+</button>
+      <input type="text" id="message-input" placeholder="Masukkan pesan">
+      <button id="send-btn">➤</button>
+    </div>
+  </div>
+
+  <script src="ChatBotKonsultasi.js"></script>
+</body>
+</html>

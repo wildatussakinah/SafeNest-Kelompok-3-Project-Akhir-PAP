@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: white;
+  color: #1f1f1f;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #265A96;
+  color: white;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.menu span {
+  color: white;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.illustration {
+  max-width: 500px;
+  margin: 20px;
+}
+
+.illustration img {
+  width: 100%;
+  height: auto;
+}
+
+.form {
+  max-width: 400px;
+  width: 100%;
+  margin: 20px;
+}
+
+.form h2 {
+  font-size: 32px;
+  color: #265A96;
+  margin-bottom: 16px;
+}
+
+.form p {
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: #444;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.field label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 12px;
+  border: 1.5px solid #265A96;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.btn {
+  background-color: #265A96;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1d4b7f;
+}
+
+.signup {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 24px;
+}
+
+.signup a {
+  color: #265A96;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

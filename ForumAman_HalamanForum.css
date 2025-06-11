@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+header.navbar {
+  background-color: #0c4a83;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.logo {
+  color: #5AA0F1;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.logo span {
+  color: #fda4af;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  padding: 0 10px;
+}
+
+.menu a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 25%;
+  height: 50%;
+  width: 1px;
+  background-color: white;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.menu .active {
+  border-bottom: 2px solid white;
+  font-weight: bold;
+}
+
+/* DROPDOWN PENGATURAN */
+.pengaturan-dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.pengaturan-dropdown img {
+  width: 25px;
+  height: 25px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 999;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #333;
+  background-color: white;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f3f4f6;
+}
+
+/* FORUM CONTENT */
+.forum-wrapper {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.forum-wrapper h1 {
+  font-size: 2.5rem;
+  color: #0c4a83;
+  margin-bottom: 0.5rem;
+}
+
+.forum-wrapper p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* KATEGORI FORUM */
+.kategori-forum {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem; /* ✅ tambah jarak antar kartu */
+  justify-items: center;
+  margin-bottom: 2rem;
+  padding: 0 30px; /* ✅ padding kiri-kanan */
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #0c4a83;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.card.putih {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.card.merah {
+  background-color: #fcdada;
+  border: 1px solid #e88;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* TOMBOL DISKUSI BARU */
+.btn-diskusi {
+  display: inline-block;
+  background-color: #0c4a83;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.btn-diskusi:hover {
+  background-color: #08315c;
+}

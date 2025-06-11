@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+}
+
+.navbar {
+  background-color: #17407e;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  position: relative;
+  padding: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+nav a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 25%;
+  height: 50%;
+  width: 1px;
+  background-color: white;
+}
+
+.logo {
+  color: #5AA0F1;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.logo span {
+  color: #fda4af;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.menu a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: white;
+}
+.menu .active {
+  border-bottom: 2px solid white;
+  font-weight: bold;
+}
+
+.pengaturan-dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.pengaturan-dropdown img {
+  width: 25px;
+  height: 25px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 999;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #333;
+  background-color: white;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f3f4f6;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3rem 4rem;
+  gap: 3rem;
+}
+
+.text {
+  max-width: 60%;
+}
+
+.text h1 {
+  color: #2C3D78;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.text ul {
+  padding-left: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.text li {
+  margin-bottom: 0.75rem;
+}
+
+.text h3 {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #2C3D78;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.image {
+  flex: 1;
+  text-align: center;
+}
+
+.image img {
+  width: 100%;
+  max-width: 400px;
+}

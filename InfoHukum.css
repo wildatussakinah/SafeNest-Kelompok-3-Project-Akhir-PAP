@@ -1,0 +1,199 @@
+/* Umum */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: white;
+  color: #1f1f1f;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #265A96;
+  color: white;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.menu span {
+  color: white;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px 12px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+/* Main Content Layout */
+main,
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 40px;
+  gap: 40px;
+}
+
+/* Konten Utama (Info Hukum 2 dan 3) */
+.content,
+.left-content {
+  max-width: 600px;
+  flex: 1;
+}
+
+.content h2,
+.left-content h1,
+.left-content h2.section-title {
+  font-size: 28px;
+  color: #265A96;
+  margin-bottom: 20px;
+}
+
+.content h3,
+.left-content .section-title {
+  font-size: 20px;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.content p,
+.content ol,
+.left-content p,
+.left-content .text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.content ol {
+  padding-left: 20px;
+}
+
+.subtitle {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  max-width: 300px;
+  flex: 1;
+  background-color: #f7f9fc;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.sidebar img.illustration {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.sidebar-content h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #265A96;
+}
+
+.sidebar-content hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.sidebar-content a {
+  display: block;
+  color: #265A96;
+  text-decoration: none;
+  margin: 6px 0;
+  font-weight: 500;
+}
+
+.sidebar-content a:hover {
+  text-decoration: underline;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  main,
+  .container {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .content,
+  .sidebar,
+  .left-content {
+    max-width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

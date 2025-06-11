@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profil - SafeNest</title>
+  <link rel="stylesheet" href="StyleProfil.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Safe<span>Nest</span></div>
+    <nav class="menu">
+      <a href="#">Home</a>
+      <a href="#">Artikel</a>
+      <a href="#">Informasi</a>
+      <a href="#">Konsultasi</a>
+      <a href="#">Forum Aman</a>
+    </nav>
+    <button class="login-btn">Daftar/Masuk</button>
+  </header>
+
+  <div class="main-container">
+    <aside class="sidebar">
+      <ul>
+        <li class="active">Profil</li>
+        <li>Pengaturan</li>
+        <li>FAQ</li>
+        <li class="logout">Logout</li>
+      </ul>
+    </aside>
+
+    <section class="content">
+      <div class="profile-header">
+        <img src="FotoProfil.png" alt="Foto Profil" />
+        <div class="profile-info">
+          <h2>Sabrina Febbiyanti</h2>
+          <p>sabrina1@gmail.com</p>
+        </div>
+        <button class="edit-btn">Edit Profil ✎</button>
+      </div>
+
+      <hr />
+
+      <div class="profile-details">
+        <h3>Profil</h3>
+        <div class="profile-grid">
+          <div>
+            <strong>Nama Lengkap</strong>
+            <p>Sabrina Febbiyanti</p>
+            <strong>Email</strong>
+            <p>sabrina1@gmail.com</p>
+            <strong>Nomor HP</strong>
+            <p>012345678910</p>
+          </div>
+          <div>
+            <strong>Username Samaran</strong>
+            <p>AnggekMekar</p>
+            <strong>Password</strong>
+            <p>12345678</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="popup-logout" id="popupLogout">
+    <div class="popup-content">
+      <p>Yakin ingin logout?</p>
+      <div class="popup-buttons">
+        <button onclick="confirmLogout()">Ya</button>
+        <button onclick="closePopup()">Tidak</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="Profil.js"></script>
+</body>
+</html>

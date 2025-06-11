@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeNest - Konsultasi</title>
+  <link rel="stylesheet" href="Konsultasi.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Safe<span>Nest</span></div>
+    <nav class="menu">
+      <a href="home.html">Home</a>
+      <a href="Artikel.html">Artikel</a>
+      <a href="InfoHukum_1.html">Informasi</a>
+      <a href="Konsultasi.html" class="active">Konsultasi</a>
+      <a href="ForumAman.html">Forum Aman</a>
+    </nav>
+    <div class="pengaturan">
+      <div class="pengaturan-dropdown">
+      <img src="assets/icon_settings_bw.png" alt="pengaturan" id="gearIcon" />
+      <div class="dropdown-menu" id="dropdownMenu">
+        <a href="#">Profil</a>
+        <a href="#">Pengaturan Akun</a>
+        <a href="#">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="left-panel">
+      <img src="assets/konsultasi_gambar.png" alt="Ilustrasi Konsultasi">
+      <h1>Temukan Ahli Yang Tepat Untukmu</h1>
+      <p>Terhubung dengan psikolog dan psikiater berlisensi kami untuk sesi konsultasi personal yang aman dan rahasia.</p>
+      <a href="Konsultasi_Psikolog.html"><button>Muat lebih banyak</button></a>
+    </section>
+
+    <section class="right-panel">
+      <h2>Rekomendasi</h2>
+      <div class="search-box">
+        <input type="text" id="search" placeholder="Cari konselor, psikolog, spesialis">
+        <span><img src="assets/konsultasi_icon_pencarian.jpeg" alt="pencarian"></span>
+      </div>
+      <div class="cards" id="card-container">
+        <div class="card blue">
+        <img src="assets/konsultasi_page 2_person 7_ida bagus.jpg" alt="Ida Bagus">
+        <h2>Ida Bagus, M.Psi.</h2>
+        <p>Psikolog Klinis</p>
+        <div class="buttons">
+          <button onclick="konsultasi()">Konsultasi</button>
+          <button onclick="lihatProfil()">Lihat Profil</button>
+        </div>
+      </div>
+
+      <div class="card pink">
+        <img src="assets/konsultasi_page 2_person 8_annisa axelta.jpg" alt="Annisa">
+        <h2>Annisa Axelta, M.Psi.</h2>
+        <p>Psikolog Klinis</p>
+        <div class="buttons">
+          <button onclick="konsultasi()">Konsultasi</button>
+          <button onclick="lihatProfil()">Lihat Profil</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="Konsultasi.js"></script>
+</body>
+</html>

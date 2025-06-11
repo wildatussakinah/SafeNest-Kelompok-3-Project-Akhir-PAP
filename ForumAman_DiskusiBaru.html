@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diskusi Baru - SafeNest</title>
+  <link rel="stylesheet" href="ForumAman_DiskusiBaru.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">Safe<span>Nest</span></div>
+    <nav class="menu">
+      <a href="#">Home</a>
+      <a href="Artikel.html">Artikel</a>
+      <a href="Informasi.html">Informasi</a>
+      <a href="Konsultasi.html">Konsultasi</a>
+      <a href="ForumAman.html" class="active">Forum Aman</a>
+    </nav>
+    <div class="pengaturan-dropdown">
+      <img src="pengaturan.png" alt="pengaturan" id="gearIcon" />
+      <div class="dropdown-menu" id="dropdownMenu">
+        <a href="Profil.html">Profil</a>
+        <a href="Profil.html">Pengaturan Akun</a>
+        <a href="Profil.html">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="diskusi-baru-wrapper">
+    <h1>Diskusi Baru</h1>
+    <div class="diskusi-form-container">
+      <form id="formDiskusi">
+        <label for="judul">Judul</label>
+        <input type="text" id="judul" name="judul" placeholder="Tulis judul diskusi" required>
+
+        <label for="isi">Isi</label>
+        <textarea id="isi" name="isi" rows="6" placeholder="Tulis isi diskusi" required></textarea>
+
+        <button type="submit">Bagikan</button>
+      </form>
+
+      <div class="ilustrasi">
+        <img src="assets/forum_gambar_2.png" alt="Ilustrasi diskusi">
+      </div>
+    </div>
+  </main>
+
+  <script src="ForumAman_DiskusiBaru.js"></script>
+</body>
+</html>

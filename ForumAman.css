@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+header.navbar {
+  background-color: #0c4a83;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.logo {
+  color: #5AA0F1;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.logo span {
+  color: #fda4af;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  padding: 0 10px;
+}
+
+.menu a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 25%;
+  height: 50%;
+  width: 1px;
+  background-color: white;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.menu .active {
+  border-bottom: 2px solid white;
+  font-weight: bold;
+}
+
+/* DROPDOWN PENGATURAN */
+.pengaturan-dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.pengaturan-dropdown img {
+  width: 25px;
+  height: 25px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 999;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #333;
+  background-color: white;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f3f4f6;
+}
+
+/* Main content */
+.forum-container {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.forum-container h1 {
+  font-size: 2rem;
+  color: #2C3D78;
+  margin-bottom: 0.5rem;
+}
+
+.forum-container p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.forum-image img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.forum-button {
+  display: inline-block;
+  background-color: #17407e;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.forum-button:hover {
+  background-color: #0d2b59;
+}

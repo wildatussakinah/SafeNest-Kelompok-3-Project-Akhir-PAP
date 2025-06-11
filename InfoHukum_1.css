@@ -1,0 +1,161 @@
+/* Umum */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: white;
+  color: #1f1f1f;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #265A96;
+  color: white;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.menu span {
+  color: white;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 8px 12px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+/* Main Content */
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.info-text {
+  max-width: 500px;
+}
+
+.info-text h1 {
+  font-size: 36px;
+  color: #265A96;
+  margin-bottom: 20px;
+}
+
+.info-text p {
+  font-size: 18px;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.btn-utama {
+  background-color: #265A96;
+  color: white;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-utama:hover {
+  background-color: #1d4b7f;
+}
+
+.info-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .info-container {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .info-text h1 {
+    font-size: 28px;
+  }
+
+  .info-text p {
+    font-size: 16px;
+  }
+
+  .info-image img {
+    max-width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
